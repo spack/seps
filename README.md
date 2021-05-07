@@ -25,7 +25,7 @@ These should be at the top level of your repository:
 * `NOTICE` - LLNL's required `NOTICE` with contract info and disclaimer. The
   `Apache-2.0` license also requires that this be distributed.
 
-## Headers
+## License Headers
 
 In files in the repository, you should have a short header like this:
 
@@ -42,7 +42,7 @@ etc.
 
 This header lets people know the file is part of Spack and identifies the
 license concisely with an SPDX identifier. It also makes it clear that the
-copyright is not just LLNS's -- copyrights are retaind by developers.
+copyright is not just LLNS's -- copyrights are retained by developers.
 
 ## License
 
