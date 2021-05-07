@@ -22,7 +22,8 @@ These should be at the top level of your repository:
     * A description of what SPDX identifiers are.
 * `LICENSE-MIT` - The text of the `MIT` license.
 * `LICENSE-APACHE` - The text of the `Apache-2.0` license.
-* `NOTICE` - LLNL's special `NOTICE` with contract info and disclaimer.
+* `NOTICE` - LLNL's required `NOTICE` with contract info and disclaimer. The
+  `Apache-2.0` license also requires that this be distributed.
 
 ## Headers
 
