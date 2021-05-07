@@ -35,6 +35,10 @@ In files in the repository, you should have a short header like this:
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 ```
 
+For languages with different types of comments, you can just use whatever is
+standard, e.g. `//` for C++, `/* */` for C, `--` for Lua, `%` for Prolog/ASP
+etc.
+
 This header lets people know the file is part of Spack and identifies the
 license concisely with an SPDX identifier. It also makes it clear that the
 copyright is not just LLNS's -- copyrights are retaind by developers.
