@@ -1,48 +1,57 @@
-# Spack Repository Template
+# Spack Enhancement Proposals
 
-Spack is a dual-licensed project, and getting all the right files in the right
-place can be a pain. This is a simple template repository that you can use to
-ensure you have all the right files present in your repo.
+SEP stands for Spack Enhancement Proposal. SEPs are written design documents
+for new features in Spack. While not all features in Spack should go through
+SEPs, there are an increasing number of changes that are hard to track without
+the details written down. Writing forces you to make your thoughts concrete in
+a way that discussions and telcons do not, and SEPs are for occasions where you
+really do need to get all the technical details written down before
+implementing.
 
-## Files you need
+## Is my thing a SEP?
 
-These should be at the top level of your repository:
+As a rough guideline, use a SEP when:
 
-* `README.md` - The `README.md` file should have a short section at the bottom
-  called "License", with a really brief statement saying that Spack is
-  dual-licensed and what that means. It should also have the SPDX license
-  identifier and the LLNL release number for Spack (see below).
-* `COPYRIGHT` - Used because Spack is dual-licensed, and if `COPYRIGHT` is not
-  present, GitHub's "License" link will point to one of the top two `LICENSE-*`
-  files. `COPYRIGHT` has:
-    * The same short text that's in the `README.md` so that
-      people know Spack is dual-licensed.
-    * A statement that copyrights are retained by contributors.
-    * Pointers to LICENSE-* and NOTICE files.
-    * A description of what SPDX identifiers are.
-* `LICENSE-MIT` - The text of the `MIT` license.
-* `LICENSE-APACHE` - The text of the `Apache-2.0` license.
-* `NOTICE` - LLNL's required `NOTICE` with contract info and disclaimer. The
-  `Apache-2.0` license also requires that this be distributed.
+* The full scope of changes and their impact affect many parts of Spack;
+* Complete technical details are hard to understand in short meetings or
+  online discussions;
+* Consensus is required among many Spack implementers, users, and contributors;
+* Changes will require significant effort (redesigns, API changes, chagnes to
+  core data structures);
+* The feature will likely affect user workflow; or
+* Users are likely to notice and to rely heavily on the proposed feature.
 
-## License Headers
+The following are probably not SEPs:
 
-In files in the repository, you should have a short header like this:
+* Adding new command options;
+* Fixing a bug;
+* Refactoring;
+* Performance enhancements that just speed up existing commands; or
+* Adding error messages.
 
-```python
-# Copyright 2013-2021 Lawrence Livermore National Security, LLC and other
-# Spack Project Developers. See the top-level COPYRIGHT file for details.
-#
-# SPDX-License-Identifier: (Apache-2.0 OR MIT)
-```
+## What's in a SEP?
 
-For languages with different types of comments, you can just use whatever is
-standard, e.g. `//` for C++, `/* */` for C, `--` for Lua, `%` for Prolog/ASP
-etc.
+We don't want to restrict too much how you write your SEP, but in general, you
+should have the following:
 
-This header lets people know the file is part of Spack and identifies the
-license concisely with an SPDX identifier. It also makes it clear that the
-copyright is not just LLNS's -- copyrights are retained by developers.
+1. A description of the problem the SEP aims to solve;
+2. A description of the goals of the SEP;
+3. The changes being proposed; and
+4. Example use cases.
+
+We don't require these to be in any particular order or mandate a format., but
+these elements should be clear in your writeup.
+
+## How do I make a SEP?
+
+1. Make a new file called `sep-xxxx.md` in the `seps/` directory in this
+   project, where `xxxx` is the next available zero-padded  SEP number.
+2. Title your SEP `SEP-n`, where `n` is the SEP number without zero padding.
+3. Write up your SEP!
+3. Submit a PR for the initial revision, and start working with people to
+   refine your ideas and get consensus.
+
+That's it.
 
 ## License
 
