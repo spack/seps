@@ -16,7 +16,7 @@ As a rough guideline, use a SEP when:
 * Complete technical details are hard to understand in short meetings or
   online discussions;
 * Consensus is required among many Spack implementers, users, and contributors;
-* Changes will require significant effort (redesigns, API changes, chagnes to
+* Changes will require significant effort (redesigns, API changes, changes to
   core data structures);
 * The feature will likely affect user workflow; or
 * Users are likely to notice and to rely heavily on the proposed feature.
